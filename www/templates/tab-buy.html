@@ -1,0 +1,16 @@
+<ion-view view-title="放心买">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item item-thumbnail-left item-icon-right" ng-repeat="product in products" type="item-text-wrap" href="#/tab/buy/{{product.id}}">
+        <img ng-src="{{product.face}}">
+        <h2>{{product.name}}</h2>
+        <p>{{product.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(product)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
