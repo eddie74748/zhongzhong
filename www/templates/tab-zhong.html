@@ -3,6 +3,7 @@
 
   <ion-content>
     <ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide-pager ng-click="onSlideClicked($slideIndex)"></ion-slide-pager>
       <ion-slide>
           <div class="box positive-bg"><h1>BLUE</h1></div>
       </ion-slide>
@@ -13,6 +14,39 @@
           <div class="box balanced-bg"><h1>PINK</h1></div>
       </ion-slide>
     </ion-slide-box>
+
+      <img collection-repeat="photo in topPhotos"
+           item-width="20%"
+           item-height="100px"
+           ng-src="{{photo.url}}">
+
+      <ion-scroll direction="x" class="available-scroller">
+    <div class="list card"
+         collection-repeat="photo in topPhotos"
+         item-width="50%"
+         item-height="400px">
+      <div class="item item-body">
+          <img class="full-image" ng-src="{{photo.url}}">
+          <p>
+              This is a "Facebook" styled Card asdfasdfasdfasdfasdfasdfaasdfffffffffffffffffffffsdfasdfasdfasdfads.
+          </p>
+          <p>
+              <a href="#" class="subdued">1 Like</a>
+              <a href="#" class="subdued">5 Comments</a>
+          </p>
+      </div>
+    </div>
+          </ion-scroll>
+
+      <div class="list card">
+          <div class="item item-divider">热门种种</div>
+          <ion-scroll direction="x" class="available-scroller">
+              <div class="photo" collection-repeat="photo in topPhotos"
+                   item-height="100%" item-width="50%">
+                  <img ng-src="{{photo.url}}">
+              </div>
+          </ion-scroll>
+      </div>
     <div class="list card">
       <div class="item item-divider">种水果</div>
       <div class="item item-body">
