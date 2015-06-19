@@ -1,22 +1,83 @@
 <ion-view view-title="良心卖">
   <ion-content>
 
-      <div class="list">
-          <label class="item item-input item-stacked-label">
-              <span class="input-label">产品名称</span>
-              <input type="text" placeholder="枇杷">
-          </label>
-          <label class="item item-input item-stacked-label">
-              <span class="input-label">产品分类</span>
-              <input type="text" placeholder="水果？ 蔬菜？">
-          </label>
-          <label class="item item-input item-stacked-label">
-              <span class="input-label">产品单价</span>
-              <input type="text" placeholder="20/斤">
-          </label>
-          <button class="button button-block button-positive">
-              Block Button
-          </button>
-      </div>
+      <!-- page wrapper starts 
+		  <div class="pageWrapper singlePostPageWrapper"> -->
+		    
+		    <!-- post content wrapper starts
+		    <div class="singlePostContentWrapper">  -->
+		      <!-- page title starts -->
+		      <h3 class="pageTitle">Single Post</h3>
+		      <!-- page title ends -->
+		      <div class="pageSpacer"></div>
+		      <img src="images/content/small-1-1.jpg" class="largeImage" alt=""/>
+		      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+		      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+		      <div class="textBreak"></div>
+		    </div>
+		    <!-- post content wrapper ends --> 
+		    <!-- post info starts -->
+		    <div class="singlePostInfoWrapper"><span class="singleIconWrapper singleIconText iconCalendarDark postInfo postDate">03/06/2013</span><a href="" class="singleIconWrapper singleIconText iconEditDark postInfo postAuthor postInfoNoMargin">admin</a></div>
+		    <!-- post info ends --> 
+		    <!-- post links wrapper starts -->
+		    <div class="postLinksWrapper"> <a href="" class="postLink previousPost">&laquo; Previous Post</a> <a href="" class="postLink nextPost">Next Post &raquo;</a> </div>
+		    <!-- post links wrapper ends --> 
+		    <!-- comments section wrapper starts -->
+		    <div class="commentsSectionWrapper">
+		      <h4 class="commentsTitle">2 Comments:</h4>
+		      <!-- comments wrapper starts -->
+		      <div class="commentsWrapper"> 
+		        <!-- comment wrapper starts -->
+		        <div class="commentWrapper"> <a href="" class="commentAvatar"><img src="images/common/commentAvatarBg.png" alt=""/></a>
+		          <p class="commentInfoWrapper">by <a href="" class="">user</a> on 03/06/2013 | <a href="" class="editReplyButton replyButton">reply</a></p>
+		          <div class="clear"></div>
+		          <div class="comment">
+		            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+		          </div>
+		        </div>
+		        <!-- comment wrapper ends --> 
+		        <!-- comment wrapper starts -->
+		        <div class="commentWrapper"> <a href="" class="commentAvatar"><img src="images/common/commentAvatarBg.png" alt=""/></a>
+		          <p class="commentInfoWrapper">by <a href="" class="">user</a> on 03/06/2013 | <a href="" class="editReplyButton replyButton">reply</a></p>
+		          <div class="clear"></div>
+		          <div class="comment">
+		            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
+		          </div>
+		        </div>
+		        <!-- comment wrapper ends --> 
+		      </div>
+		      <!-- coments wrapper ends --> 
+		      <!-- comments form wrapper starts 
+		      <div class="commentsFormWrapper">-->
+		        <h4 class="commentsTitle commentsFormTitle">Leave a Comment:</h4>
+		        <form action="#" method="post" class="commentsForm" id="commentsForm">
+		          <fieldset>
+		            <div class="formFieldWrapper">
+		              <label for="commentNameField">Name:</label>
+		              <input type="text" name="commentNameField" class="commentField commentNameField" id="commentNameField"/>
+		            </div>
+		            <div class="formFieldWrapper">
+		              <label for="commentEmailField">Email:</label>
+		              <input type="text" name="commentEmailField" class="commentField commentEmailField" id="commentEmailField"/>
+		            </div>
+		            <div class="formFieldWrapper">
+		              <label for="commentWebsiteField">Website:</label>
+		              <input type="text" name="commentWebsiteField" class="commentField commentWebsiteField" id="commentWebsiteField"/>
+		            </div>
+		            <div class="formTextareaWrapper">
+		              <label for="commentCommentTextarea">Comment:</label>
+		              <textarea name="commentCommentTextarea" class="commentTextarea commentCommentTextarea" id="commentCommentTextarea"></textarea>
+		            </div>
+		            <input type="submit" class="buttonWrapper commentSubmitButton" id="commentSubmitButton" value="Submit Comment"/>
+		          </fieldset>
+		        </form>
+		      <!--</div>
+		       coments form wrapper ends --> 
+		    <!--</div>
+		     comments section wrapper ends --> 
+		    
+		  <!-- </div>
+		  page wrapper ends --> 
+      
   </ion-content>
 </ion-view>
