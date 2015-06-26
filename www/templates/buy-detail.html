@@ -1,68 +1,59 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view view-title="{{product.name}}">
+  <ion-content>
 
-    <div class="bar bar-header  bar-positive">
-        <a href="#/tab/buy" class="button button-icon icon ion-ios-arrow-back"></a>
-    </div>
-
-  <ion-content class="padding has-header">
-      
-      <!-- page wrapper starts -->
-		  <div class="pageWrapper singleProjectPageWrapper">
-		    <div class="singleProjectImageWrapper"><img src="images/content/small-1-1.jpg" class="singleProjectImage" alt=""/> </div>
-		    <!-- page content wrapper starts -->
-		    <div class="pageContentWrapper singleProjectContentWrapper"> 
+      <!-- page wrapper starts 
+		  <div class="pageWrapper singlePostPageWrapper"> -->
+		    
+		    <!-- post content wrapper starts-->
+            <img src="images/content/small-1-1.jpg" class="largeImage" alt=""/>
+		    <div class="singlePostContentWrapper">
 		      <!-- page title starts -->
-		      <h3 class="pageTitle">Single Project Page</h3>
-		      <!-- page title ends -->
-		      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-		      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-		      <div class="textBreakBoth"></div>
-		      <h4 class="blockTitle">Project details:</h4>
-		      <!-- table starts -->
-		      <table>
-		        <thead>
-		          <tr>
-		            <th>Number</th>
-		            <th>Technologies</th>
-		            <th>Status</th>
-		          </tr>
-		        </thead>
-		        <tbody>
-		          <tr>
-		            <td>1</td>
-		            <td>HTML/CSS</td>
-		            <td><span class="singleIconWrapper iconCheckmarkDark"></span></td>
-		          </tr>
-		          <tr>
-		            <td>2</td>
-		            <td>PHP</td>
-		            <td><span class="singleIconWrapper iconCheckmarkDark"></span></td>
-		          </tr>
-		          <tr>
-		            <td>3</td>
-		            <td>JavaScript</td>
-		            <td><span class="singleIconWrapper iconCheckmarkDark"></span></td>
-		          </tr>
-		          <tr>
-		            <td>4</td>
-		            <td>Photoshop</td>
-		            <td><span class="singleIconWrapper iconCheckmarkDark"></span></td>
-		          </tr>
-		        </tbody>
-		      </table>
-		      <!-- table ends -->
-		      <div class="pageBreak"></div>
-		    </div>
-		    <!-- page content wrapper ends -->
-		    <div class="singleProjectItemButtonsWrapper"><a href="images/content/large-1.jpg" class="singleProjectExpandButton">expand</a><a href="" class="singleProjectDetailsButton">website</a></div>
-		  </div>
-		  <!-- page wrapper ends --> 
+                <!-- <h3 class="pageTitle">Single Post</h3> -->
+                <!-- page title ends -->
+                <!-- <div class="pageSpacer"></div>-->
+              <h3 class="pageTitle">东山杨梅</h3>
+              <p>东山杨梅描述</p>
+              <p>东山杨梅价格描述</p>
+              <div class="textBreak"></div>
+            </div>
+            <!-- post content wrapper ends -->
+		    <!-- post info starts -->
+		    <div class="singlePostInfoWrapper"><span class="singleIconWrapper singleIconText iconCalendarDark postInfo postDate">03/06/2013</span><a href="" class="singleIconWrapper singleIconText iconEditDark postInfo postAuthor postInfoNoMargin">admin</a></div>
+		    <!-- post info ends --> 
+		    <!-- post links wrapper starts -->
+		    <div class="postLinksWrapper"> <a href="" class="postLink previousPost">&laquo; Previous Post</a> <a href="" class="postLink nextPost">Next Post &raquo;</a> </div>
+		    <!-- post links wrapper ends --> 
+		    <!-- comments section wrapper starts -->
+		    <div class="commentsSectionWrapper">
+		      <h4 class="commentsTitle">2 Comments:</h4>
+		      <!-- comments wrapper starts -->
+		      <div class="commentsWrapper"> 
+		        <!-- comment wrapper starts -->
+		        <div class="commentWrapper"> <a href="" class="commentAvatar"><img src="images/common/commentAvatarBg.png" alt=""/></a>
+		          <p class="commentInfoWrapper">by <a href="" class="">user</a> on 03/06/2013 | <a href="" class="editReplyButton replyButton">reply</a></p>
+		          <div class="clear"></div>
+		          <div class="comment">
+		            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+		          </div>
+		        </div>
+		        <!-- comment wrapper ends --> 
+		        <!-- comment wrapper starts -->
+		        <div class="commentWrapper"> <a href="" class="commentAvatar"><img src="images/common/commentAvatarBg.png" alt=""/></a>
+		          <p class="commentInfoWrapper">by <a href="" class="">user</a> on 03/06/2013 | <a href="" class="editReplyButton replyButton">reply</a></p>
+		          <div class="clear"></div>
+		          <div class="comment">
+		            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
+		          </div>
+		        </div>
+		        <!-- comment wrapper ends --> 
+		      </div>
+		      <!-- coments wrapper ends -->
+
+		    <!--</div>
+		     comments section wrapper ends --> 
+		    
+		  <!-- </div>
+		  page wrapper ends --> 
       
   </ion-content>
 </ion-view>
