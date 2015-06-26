@@ -1,11 +1,13 @@
-# zhongzhong
-![image](https://github.com/eddie74748/zhongzhong/blob/master/www/img/ionic.png)
-plant every thing you want
+zhongzhong
+======
 
-Build Step:
-git clone ...
+Description: 
+Plant anything you like.
+
+Usage:
 install cordova & ionic
 cd zhongzhong
 ionic build android
 ionic emulate android
+
 
